@@ -12,9 +12,10 @@ but the performance is the same
 IMPORTANT : --------------------
 -if you want to add a custom product/watch make sure the image is : 
 1-a PNG with transparent background 
-2-edit the resolution to: 364x500
+2-edit the resolution to: 364x500 ( link for png images : https://www.pngwing.com/en/free-png-ysbzf )
 3-add it to products file in the website file directory 
-
+Tip : if you use the link to download the images , make sure you enter 500 for height and then download the image , and then use photoshop or any 
+alternative app to adjust the width to 364 
 ---------------------------------------SET UP  ----------------------------
 
 1-install xampp app 
