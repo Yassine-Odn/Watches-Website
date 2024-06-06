@@ -1,0 +1,1059 @@
+/* styles.css */
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FuturaPTMedium', sans-serif;
+}
+header{
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+
+}
+
+body {
+    font-family: 'FuturaPTMedium', sans-serif;
+    font-weight: 600; /* Thin font weight */
+    font-style: normal; /* Corrected font style */
+    background-color: #161616; /* Dark background color for the entire page */
+    color: white; /* Ensuring text is visible on the dark background */
+}
+
+section{
+     min-height:100vh ;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+}
+section:nth-child(1){
+    color: #fff;
+    
+}
+section:nth-child(2){
+    color: #fff;
+    background: #fff;
+   
+}
+section:nth-child(3){
+    color: #fff;
+}
+section:nth-child(4){
+    color: #fff;
+    background: #fff;
+}
+/* Navigation Bar ---------------------------------------------------------*/
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #050505;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+   
+   
+}
+.navbar-section {
+    display: flex;
+    align-items: center;
+}
+.navbar-left {
+    justify-content: flex-start;
+    margin-right: 6.4%;
+}
+
+.navbar-right {
+    justify-content: flex-end;
+}
+/* Brand logo ----------------------------------------------------*/
+
+.brand-logo {
+    
+    align-items: center; /* Vertically center the content */
+    background-image: url('logo/logo2.png'); /* Path to your logo image */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-size: cover; /* Ensures the background image scales to fit the container */
+}
+
+
+
+
+
+/* seperation----------------------------------------------------*/
+.seperate-text{
+    font-size: 90px;
+    font-weight: 700;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    font-family: 'RendorsRegular-vnAaZ', sans-serif  !important;
+    flex-grow: 1; /* Allows the brand name to stay centered */
+    text-align: center; /* Center the text */
+    color: #7099bb;
+}
+/* Dropdown Menu --------------------------------------------------------*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #0f0f16;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff; /* Add a white border */
+    cursor: pointer;
+    border-radius: 4px;
+     /* ... (other styles) ... */
+     border: 1px solid #ffffff; /* Custom border color */
+     transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+     font-family: 'FuturaPTMedium', sans-serif; /* Apply the custom font */
+    font-weight: 600; /* Thin font weight */
+    margin-right: 10px;
+}
+.dropbtn:hover {
+    background-color: #ffffff00; /* Darker shade on hover */
+    border-color: #2196F3 ; /* Darker border color on hover ------------*/
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #161616;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px; /* Add rounded corners */
+    
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #2196F3; /* Add a separator line between items */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropbtn::after {
+    content: '▼'; /* Downward arrow symbol */
+    font-size: 10px; /* Adjust size as needed */
+    margin-left: 5px; /* Space between the button text and the arrow */
+}
+.dropdown-content a:hover {
+    background-color: #ffffff2f; /* Lighter shade on hover */
+}
+/* Remove border from the last item */
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+/* Remove this rule */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Gender Buttons */
+.gender-btn {
+    background-color: #33333300;
+    color: white;
+    padding: 10px;
+    
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ffffff00; /* Custom border color */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'FuturaPTMedium', sans-serif; /* Apply the custom font */
+    font-weight: 600; /* Thin font weight */
+    margin-right: 10px;
+}
+
+.gender-btn:hover {
+    background-color: #ffffff00; /* Lighter shade on hover */
+    border-color: #2196F3; /* Darker border color on hover */
+}
+
+/* Search Bar */
+#search-bar {
+    padding: 10px;
+    width: 200px;
+  
+     /* Custom border color */
+    background-color: transparent;
+    font-family: 'FuturaPTMedium', sans-serif;
+    color: white;
+    font-size: 16px;
+    border: none; /* Remove all borders */
+    border-bottom: 2px solid #ffffff; /* Add a single line as the bottom border */
+}
+#search-bar::placeholder {
+    color: white; /* Set the placeholder text color to white */
+}
+#search-bar:focus {
+    outline: none; /* Removes the default focus outline */
+    border-bottom: 2px solid #2196F3; /* Keeps the bottom border line visible */
+}
+/* Cart Icon */
+#cart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+/* Authentication Buttons */
+.auth-btn {
+    background-color: #33333300;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff; /* Add a white border */
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #2196F3; /* Custom border color */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'FuturaPTMedium', sans-serif; /* Apply the custom font */
+    font-weight: 600; /* Thin font weight */
+    margin-right: 10px;
+}
+
+.authin-btn {
+    background-color: #33333300;
+    color: white;
+    padding: 10px;
+    border: 1px solid #fff; /* Add a white border */
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #2196F3; /* Custom border color */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    font-family: 'FuturaPTMedium', sans-serif; /* Apply the custom font */
+    font-weight: 600; /* Thin font weight */
+    margin-right: 10px;
+}
+.auth-btn:hover {
+    background-color: #1e88e5; /* Darker shade on hover */
+    border-color: #1976d2; /* Darker border color on hover */
+}
+/* Video */
+.video-container {
+    position: relative; /* Relative position for absolute positioning of the text */
+}
+#video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* mainntain aspect ratio and cover entire container */
+    margin-top: -40px; /* Adjust the spacing below the navbar */
+    pointer-events: none; /* Disable pointer events on the video */
+}
+/* Text container */
+
+section .container {
+    margin: 100px;
+   
+}
+section h2 {
+    font-size: 65px;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 2;
+    
+}
+section .cards {
+    display: flex;
+}
+section .cards .text-card {
+    background: #fc6c2a;
+    margin: 20px;
+    padding: 20px;
+    
+}
+
+section .cards .text-card h3{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+/*top for ------------------------------------------------------- */
+.topcards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+  }
+.cardd{
+    box-shadow: 0 4px 8px 0 rgba(56, 56, 56, 0.301);
+    
+    max-width: calc(20% - 10px);
+    margin: 5px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    transform: scale(0.8);
+  }
+  
+  .price {
+    color: #ffc09c;
+    font-size: 22px;
+  }
+  
+  .cardd button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #161616;
+    border: 2px solid #161616;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .cardd button:hover {
+    
+    border: 2px solid #2196F3 ; /* Adds a white border on hover 21f3bf */ 
+  
+  }
+  
+/*-------------------*/
+/* Text */
+/*  */ 
+.reveal{
+   
+    position: absolute;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: transform 1.5s ease;
+    
+}
+.reveal.active{
+    transform: translateY(-80px);/*change this value to fit different resolutions---------------------------------------------*/
+    opacity: 1;
+    margin-top: 11%;
+}
+
+/*-------------------*/
+.watch-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap; /* Prevents wrapping to the next line */
+}
+
+.watch-item {
+    flex: 0 0 auto; /* Prevents items from growing or shrinking */
+    margin-right: 20px; /* Add spacing between watches */
+    text-align: center;
+}
+
+.watch-item img {
+    max-width: 30%;
+    height: auto;
+}
+/*backgrounds*/
+.blur-overlay {
+    /* This will create the blur effect over the background image */
+    backdrop-filter: blur(5px); /* Adjust the pixel value to increase or decrease the blur effect */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+ 
+.background-container-one {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/wp5.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.background-container-men {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/menswatchesbg.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.background-container-women {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/womenswatchebg.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.background-container-article{
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/wp3.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.background-container-accessories {
+    position: relative;
+    
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/accessoriesWP.jpg'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+.Part-container{
+    position: relative; /* Ensure relative positioning for absolute children */
+    width: 100%; /* Adjust width as needed */
+    height: 100vh; /* Adjust height as needed */
+}
+/*articles -----------------------------------------------*/
+.article-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -150px;
+}
+
+.article-card {
+    width: 30%;
+    box-shadow: 0 5px 1px -2px #2195f300; /* Creates a single line shadow at the bottom */
+    transition: 0.7s;
+}
+
+
+
+.article-card a {
+    text-decoration: none; /* Removes underline from links */
+    color: rgb(255, 255, 255); /* Sets the color of the text */
+    display: block; /* Makes the entire card clickable */
+}
+
+.article-image {
+    width: 70%;
+    height: auto;
+    border-top-left-radius: 5px; /* Optional: if you have rounded corners */
+    border-top-right-radius: 5px; /* Optional: if you have rounded corners */
+    aspect-ratio: 1/1;
+    display: block; /* Ensures proper centering */
+    margin-bottom: 5%;
+    margin-top: -20%;
+    margin-right: 15%;
+    margin-left: 15%;
+    border: 1px solid #2196F3;
+  border-radius: 4px;
+  padding: 5px;
+  
+
+}
+
+.article-details {
+    margin-top: 0%;
+    padding: 2px 8px;
+    text-align: center; 
+}
+.article-card:hover {
+    box-shadow: 0 4px 10px -10px rgba(0, 0, 0, 0); /* Adjust hover state as needed */
+}
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .article-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .article-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+/*bottom bar ----------------------------*/
+/* Style for Bottom Navigation Bar */
+.site-footer {
+    background-color: #0e0e0e; /* Footer background color */
+    color: white; /* Text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative; /* Ensure proper positioning of the shadow */
+}
+
+/* Add the blue shadow */
+
+
+/* Add the blue shadow with a fading effect */
+.site-footer {
+    background-color: #050505; /* Footer background color */
+    color: white; /* Text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure footer content is above the shadow */
+}
+
+/* Add the blue shadow with a fading effect */
+
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/*fade effect ----------------------------------------*/
+/* New class for the fading effect */
+
+
+
+
+/* Apply the fading effect class */
+
+/* Fading effect class */
+
+.fade-effect { 
+    display: block;
+    width: 100%; /* Full width */
+    height: 00px; /* Adjustable height */
+    background: linear-gradient(to top, #2195f317 0%, rgba(0, 0, 255, 0) 100%); /* Blue fade effect */
+    transition: height 0.5s ease-in-out; /* Smooth transition for height change */
+    
+}
+/*text extras ---------------------------*/
+
+/*extra decorations ---------------------------------------------------------------------------*/
+.blue-line {
+    display: block;
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line, adjust as needed */
+    background-image: linear-gradient(to right, #2195f3, #ffa18a, #2195f3);
+}
+
+/*Men/womens product page -------------------------------*/
+.sub-title {
+
+    margin-top: 0%;
+    
+}
+
+
+/*main section -------------------------------------------------------------------------------------*/
+main {
+    padding: 20px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+main .section-title {
+   font-size: 22px;
+   margin-bottom: 30px; 
+   color: #2196F3;
+}
+main .left{
+    border-right: thin solid #ffffff00;
+    border: 1px solid #2196F3;
+    padding: 20px;
+    background-color: #050505 ;
+    border-radius: 5px;
+    width: 200px; /* Custom width */
+    height: 900px; /* Custom height */
+}
+main .left a {
+    display: block;
+    text-decoration: none;
+    color: #838181;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main .left a:hover{
+    text-decoration: underline;
+    color: #2196F3;
+}
+
+
+main .right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+main .right .product {
+    display: flex;
+    flex-direction: row; /* Display products horizontally */
+    align-items: center; /* Center children vertically */
+    justify-content: center; /* Center children horizontally */
+    /* grid-column-gap: 50px; Remove this line */
+    /* grid-row-gap: 50px; Remove this line */
+    text-align: center;
+    flex-wrap: wrap; /* Allow multiple cards in a row */
+}
+main .right .product img {
+    height: 400px;
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text details */
+    margin-left: 4%;
+}
+
+main .right .product-left img {
+    height: 300px;
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text details */
+    
+}
+main .right .product-rightt {
+    flex: 1; /* Expand to fill available space */
+    text-align: center; /* Center text content */
+}
+main .right .product-right .title{
+   font-weight: bold;
+   font-size: 18px;
+}
+main .right .title a {
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff ;
+    line-height: 1.2; /* Adjust line height as needed */
+}
+main .right .title a:hover{
+    text-decoration: underline;
+    color: #2196F3;
+}
+main .right .description {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #a5a5a5;
+}
+main .right .price {
+    font-size: 24px;
+    margin-top: 5px;
+    color: #ffa18a;
+    text-decoration: underline;
+}
+/*--------------------------experimental------------------------*/
+.product-cardd {
+    box-shadow: 0 0px 2px 1px #e7e0e01f;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
+    transform: scale(0.9);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.product-cardd:hover {
+    box-shadow: 0px 0px 15px 1px #2195f300;
+    cursor: pointer;
+    transform: scale(1); /* Scale up to original size on hover */
+    background-color: rgba(0, 0, 0, 0.877); /* Dark background on hover */
+}
+
+/* Additional styling as needed */
+
+.product-container {
+    display: flex;
+    margin-top: -2%;
+    margin-left: -2%;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.product-details {
+    /*flex: 1;*/
+    position: relative; 
+    /* Add additional styling as needed */
+}
+
+.right {
+    float: left;
+    /* Add additional styling as needed */
+}
+.product-cardd button{
+    
+    border: white;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #050505;
+    border: 2px solid #e7e0e01f;
+    text-align: center;
+    cursor: pointer;
+  
+ 
+    font-size: 18px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+.product-cardd button:hover {
+
+border: 2px solid #ffa18a8c ; /* 21f3bf98 Adds a white border on hover */
+
+}
+
+/*product page area-------------------------------------------------------------*/
+/* New classes with different names */
+
+/* Container for the product card */
+/* Container for the entire product page */
+.product-page-container {
+    
+  
+  color: #e4000000;
+}
+
+.product-page-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Set the width to 100% */
+    max-width: 900px; /* Keep the maximum width */
+    box-shadow: 0 0px 2px 1px #e0e5e744;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #05050500;
+    
+    border: 0px solid #ffffffaf;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
+    margin: 0 auto; /* This centers the card horizontally */
+}
+
+
+
+
+.product-card:hover {
+    box-shadow: 0 0px 2px 1px #2196F3;
+    
+    cursor: pointer;
+    transform: scale(1); /* Scale up to original size on hover */
+}
+
+
+/* Container for the product details */
+.product-page-details {
+    display: flex; /* Use flexbox to layout children */
+    flex-direction: row; /* Arrange children in a row */
+    width: 100%; /* Take full width of the container */
+    justify-content: center; 
+    margin-top: 80px;
+}
+
+.product-page-image {
+    height: 300px;
+    width: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text details */
+    margin-left: 4%;
+}
+
+.product-page-text {
+    flex: 1; /* Expand to fill available space */
+    text-align: center; /* Center text content */
+}
+
+.product-page-title {
+    font-weight: bold;
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.product-page-title a {
+    font-weight: bold;
+    font-size: 90px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 1.2; /* Adjust line height as needed */
+}
+
+.product-page-title a:hover {
+    text-decoration: underline;
+    color: #2196F3;
+}
+
+.product-page-description {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #a5a5a5;
+    font-size: 25px;
+    max-height: 100px; /* Adjust based on your design */
+    overflow: hidden; /* Hide overflowed content */
+    word-wrap: break-word; /* Allows long words to be able to break and wrap onto the next line */
+    max-width: 400px; /* Set a max-width for the description area */
+}
+
+
+.product-page-price {
+    font-size: 35px;
+    margin-top: 5px;
+    margin-bottom: 5%;
+    color: #ffa18a;
+    text-decoration: underline;
+}
+/* Container for the text details */
+.product-page-right {
+    flex: 1; /* Allow the details container to take up the remaining space */
+    flex-shrink: 0; /* Prevent the container from shrinking */
+    text-align: left; /* Align the text to the left */
+    margin-left: 20px; /* Add some space between the image and the details */
+    min-height: 150px; /* Set a minimum height for the container */
+   
+}
+/* Container for the image */
+.product-page-left {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and be based on the actual width */
+    
+}
+
+
+/* The side panel -------------------------------------------------------------------------- */
+.sidepanel {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+/* The side panel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 10px; /* Adjusted to be below the title padding */
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.sidepanel-title {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px; /* Add padding to move the title down a bit */
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+
+/*article slider area--------------------------------------------------------------------------*/
+
+
+.sep-image {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust this value to leave desired space from the left */
+    transform: translateY(-50%) scale(0.7); /* Keeping the vertical centering */
+    max-width: 100%;
+    max-height: 100%;
+    transition: left 1.5s ease; /* Transition the left property */
+}
+
+.slide-left-to-right {
+    left: 50%; /* Move the image to the center */
+}
+
+
+
+
+@font-face {
+    font-family: 'FuturaPTMedium'; /* Assign a name to your font */
+    src: url('./Fonts/FuturaPTLight.ttf') format('truetype'), /* Path to the font file */
+         url('./Fonts/RendorsRegular-vnAaZ.ttf') format('truetype');
+       
+}
+
+.space-between {
+    margin-bottom: 10%;
+  }
+/*carousel slider ---------------------------------------------------------------*/
+
+/* Import Google font - Poppins */
+
+  .wrapper{
+    display: flex;
+    width: 700px; /* Fixed width */
+  height: 200px; /* Fixed height */
+    position: absolute;
+    background-image: linear-gradient(to right, #050505, #2195f300, #050505);
+  padding: 10px;
+  border-radius: 5px;
+  bottom: 80px; /* Align to the bottom */
+  border: 2px solid #ffc09c81; /* Add a blue border */
+  margin-left: 1%;
+  }
+
+  .wrapper i{
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  .wrapper i:active{
+    transform: translateY(-50%) scale(0.9);
+  }
+  .wrapper i:hover{
+    background: #f2f2f2;
+  }
+  .wrapper i:first-child{
+    left: -22px;
+    display: none;
+  }
+  .wrapper i:last-child{
+    right: -22px;
+  }
+  .wrapper .carousel{
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+ 
+  .carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging img{
+    pointer-events: none;
+  }
+  .carousel img{
+    height: 200px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    width: calc(100% / 3);
+  }
+  .carousel img:first-child{
+    margin-left: 0px;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .carousel img{
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img{
+      width: 100%;
+    }
+  }
+ /*preview image -----------------------------------------------------------------------*/
+ .popup-container {
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+ }
+ 
+ .popup-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    filter: blur(20px); /* Adjust the blur radius as needed */
+    opacity: 0.8; /* Adjust the opacity for the desired effect */
+ }
+ 
+ .popup-image {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff; /* Adjust the color to match your design */
+    cursor: pointer;
+    z-index: 99; /* Add this line to ensure the close button appears above other elements */
+}
+
+  
+
